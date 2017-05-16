@@ -1,13 +1,11 @@
-var movies = Backbone.Model.extend({
-
-    apiURL = "http://localhost:3000/",
-
-    initialize : function(){
-        return apiURL
-    },
-
-    getMovie : function(id){
-        return apiURL + id
+var MovieModel = Backbone.Model.extend({
+    defaults: {
+        "title": "",
+        "id": "",
+        "releaseDate": "",
+        "releaseCountry": "",
+        "releaseYear": 0,
+        "releaseMonth": 0,
+        "releaseDay": 0
     }
-
 });
